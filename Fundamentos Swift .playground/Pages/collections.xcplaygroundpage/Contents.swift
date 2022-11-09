@@ -50,9 +50,17 @@ var removePlayerFirst = player.removeFirst() // Removendo o último registro do 
 
 player.remove(at: 3) // Removendo um registro que está no index 3
 
-// simulando uma situação real e unwrapp 
+// simulando uma situação real e unwrapp
 
 var getIndexPlayer = player.firstIndex(of: "Denise")
 if let getIndexPlayer = getIndexPlayer {
     player.remove(at: getIndexPlayer)
 }
+
+// Update nos registros do array
+
+var car: [String] = ["toyota", "audi","bmw"]
+
+car[1] = "Tesla"
+car[0...2] = ["car1", "car2","car3"]
+print(car)
