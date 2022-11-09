@@ -36,3 +36,9 @@ firstPlayer = player[0]
 var numberPlayerSlice = player[1...3]
 var hasPlayer = player.contains("Marcel")
 	
+
+// Modificando Array
+
+player.append("José")
+player += ["Carlos"]
+player.insert("Claudia", at: 2)
