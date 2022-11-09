@@ -37,8 +37,22 @@ var numberPlayerSlice = player[1...3]
 var hasPlayer = player.contains("Marcel")
 	
 
-// Modificando Array
+// Adicionando elementos no  Array
 
 player.append("José")
 player += ["Carlos"]
 player.insert("Claudia", at: 2)
+
+// Removendo elementos do array
+
+var removePlayerLast = player.removeLast() // Removendo o último registro do array
+var removePlayerFirst = player.removeFirst() // Removendo o último registro do array
+
+player.remove(at: 3) // Removendo um registro que está no index 3
+
+// simulando uma situação real e unwrapp 
+
+var getIndexPlayer = player.firstIndex(of: "Denise")
+if let getIndexPlayer = getIndexPlayer {
+    player.remove(at: getIndexPlayer)
+}
