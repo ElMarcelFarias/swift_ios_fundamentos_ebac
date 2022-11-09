@@ -37,11 +37,20 @@ var numberPlayerSlice = player[1...3]
 var hasPlayer = player.contains("Marcel")
 	
 
+
+
+
+
 // Adicionando elementos no  Array
 
 player.append("José")
 player += ["Carlos"]
 player.insert("Claudia", at: 2)
+
+
+
+
+
 
 // Removendo elementos do array
 
@@ -64,3 +73,40 @@ var car: [String] = ["toyota", "audi","bmw"]
 car[1] = "Tesla"
 car[0...2] = ["car1", "car2","car3"]
 print(car)
+
+
+
+
+
+// Trocando posição dos registros de um array
+
+
+
+print(player) // Array antes
+
+
+var movPlayer = player.remove(at: 1)
+player.insert(movPlayer, at: 0)
+
+// outra maneira
+
+player.swapAt(2, 3)
+
+print(player) // Array depois
+
+
+// Simulando uma situação real
+
+var getFirstPlayerToSwap = player.firstIndex(of: "Marcel")
+var getOtherPlayerToSwap = player.firstIndex(of: "Mayra")
+
+
+if let getFirstPlayerToSwap = getFirstPlayerToSwap, let getOtherPlayerToSwap = getOtherPlayerToSwap {
+    player.swapAt(getFirstPlayerToSwap, getOtherPlayerToSwap)
+}
+ 
+player.sort() // ordenando a matriz
+
+for player in player {
+    print(player)
+}
