@@ -2,6 +2,7 @@
 
 import Foundation
 
+// acessando elementos de um array
 
 var player: [String] = ["Marcel", "Uchöa", "Denise", "Isabel", "Mayra"] //Array
 
@@ -15,10 +16,23 @@ if player.count < 5 {
     print("Não é menor que 5")
 }
 
+// Pegando o primeiro player e fazendo o unwrapp seguro da váriavel OR .min()
 var firstPlayer = player.first
 if let firstPlayer = firstPlayer {
-    print(firstPlayer)
+    print("Primeiro jogador: ", firstPlayer)
 }
 
+// Pegando o último player e fazendo o unwrapp seguro da váriavel OR .max()
+var lastPlayer = player.last
+if let lastPlayer = lastPlayer {
+    print("Último jogador: ", lastPlayer)
+}
 
+print([1,2,3].first!)
+print([3,2,1].last!)
+
+firstPlayer = player[0]
+
+var numberPlayerSlice = player[1...3]
+var hasPlayer = player.contains("Marcel")
 	
