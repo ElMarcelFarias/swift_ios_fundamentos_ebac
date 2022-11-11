@@ -110,3 +110,22 @@ player.sort() // ordenando a matriz
 for player in player {
     print(player)
 }
+
+
+// Algumas diferenças entre array e dictionary
+
+
+var testArray: [String] = ["Marcel", "Uchöa", "Denise", "Isabel", "Mayra"] // Isso é um array
+var testeDictionary: [String: Double] = ["Marcel": 20.0, "Mayra": 20.1, "Luan": 12.2] // Isso é um dictionary ou array associativo
+
+
+if let testeUnwrappDictionary = testeDictionary["Marcel"] {
+    print(testeUnwrappDictionary)
+}
+
+// Como limpar o dictionary
+testeDictionary = [:]
+testeDictionary.isEmpty
+print(testeDictionary)
+
+
