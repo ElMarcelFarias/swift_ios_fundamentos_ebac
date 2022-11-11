@@ -9,5 +9,6 @@
         <page name='Condicionais'/>
         <page name='exercicios_condicionais'/>
         <page name='collections'/>
+        <page name='exercicios_array_dictionary'/>
     </pages>
 </playground>
