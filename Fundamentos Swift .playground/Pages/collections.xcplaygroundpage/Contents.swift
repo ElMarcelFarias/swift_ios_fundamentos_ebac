@@ -118,14 +118,23 @@ for player in player {
 var testArray: [String] = ["Marcel", "Uchöa", "Denise", "Isabel", "Mayra"] // Isso é um array
 var testeDictionary: [String: Double] = ["Marcel": 20.0, "Mayra": 20.1, "Luan": 12.2] // Isso é um dictionary ou array associativo
 
+print(testeDictionary["Mayra"]!)
 
-if let testeUnwrappDictionary = testeDictionary["Marcel"] {
-    print(testeUnwrappDictionary)
+if let unwrapp = testeDictionary["Marcel"]{
+    print(unwrapp)
 }
 
+
+
 // Como limpar o dictionary
-testeDictionary = [:]
-testeDictionary.isEmpty
+//testeDictionary = [:]
+//testeDictionary.isEmpty
+//print(testeDictionary)
+
+//testeDictionary.removeValue(forKey: "Marcel")
 print(testeDictionary)
 
 
+//Atualizando valor de um Dictionary
+
+testeDictionary["Marcel"] = 52.21
