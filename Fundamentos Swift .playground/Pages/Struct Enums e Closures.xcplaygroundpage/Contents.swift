@@ -88,4 +88,46 @@ a = 2
 print(a)
 print(b)
 
+print("---> Enum")
+//Enum trabalhar com valores de uma forma mais segura
+
+enum moveDirection: Int {
+    case foward = 1
+    case left
+    case right
+    case back
+}
+
+
+
+var mover = moveDirection.left
+print(mover.rawValue)
+
+/*
+switch mover {
+    case .foward:
+        print("Andou para frente")
+    case .left:
+        print("Andou para esquerda")
+    case .right:
+        print("Andou para direita")
+    case .back:
+        print("Andou para trás")
+}
+*/
+
+func doMove(_ movement: moveDirection){
+    switch mover {
+        case .foward:
+            print("Andou para frente")
+        case .left:
+            print("Andou para esquerda")
+        case .right:
+            print("Andou para direita")
+        case .back:
+            print("Andou para trás")
+    }
+}
+
+doMove(mover)
 
