@@ -10,5 +10,6 @@
         <page name='exercicios_condicionais'/>
         <page name='collections'/>
         <page name='exercicios_array_dictionary'/>
+        <page name='Struct Enums e Closures'/>
     </pages>
 </playground>
