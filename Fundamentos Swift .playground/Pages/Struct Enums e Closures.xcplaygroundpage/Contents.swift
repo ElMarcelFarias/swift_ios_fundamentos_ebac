@@ -60,6 +60,10 @@ struct  User {
         print("\(firstName) \(lastName)")
     }
     
+    mutating func activeUser() {
+        isActive = true
+    }
+    
 }
 
 var user = User(firstName: "Marcel", lastName: "Leite de Farias", age: 18, email: "marcel.leitefarias@gmail.com", isActive: false)
@@ -67,5 +71,21 @@ print(user.fullName)
 print(user.email)
 user.printFullName()
 
+print(user.isActive)
+user.activeUser()
+print(user.isActive)
+
+
 user.email = "mudandoemail@gmail.com"
 print(user.email)
+
+var a = 10
+var b = a
+print(a)
+print(b)
+
+a = 2
+print(a)
+print(b)
+
+
