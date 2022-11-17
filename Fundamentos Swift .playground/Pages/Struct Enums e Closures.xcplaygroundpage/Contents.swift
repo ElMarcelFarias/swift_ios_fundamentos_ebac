@@ -131,3 +131,21 @@ func doMove(_ movement: moveDirection){
 
 doMove(mover)
 
+//Associeted Value | Valor associado
+enum Medir {
+    case peso(Double)
+    case idade(Int)
+    case tamanho(width: Double, height: Double)
+}
+
+var medir = Medir.tamanho(width: 23.3, height: 22.2)
+ 
+switch medir {
+    case .peso(let peso):
+        print("Meu peso é \(peso)")
+    case .idade(let idade):
+        print("Minha idade é \(idade)")
+    case .tamanho(let width, let height):
+        print("Meu tamanho é \(width) e minha largura é \(height)")
+}
+    
