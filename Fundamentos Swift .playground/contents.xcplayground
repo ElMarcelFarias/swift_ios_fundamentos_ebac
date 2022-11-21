@@ -11,5 +11,6 @@
         <page name='collections'/>
         <page name='exercicios_array_dictionary'/>
         <page name='Struct Enums e Closures'/>
+        <page name='exercicio_struct_enum_closures'/>
     </pages>
 </playground>

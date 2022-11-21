@@ -148,4 +148,4 @@ switch medir {
     case .tamanho(let width, let height):
         print("Meu tamanho é \(width) e minha largura é \(height)")
 }
-    
+    		
