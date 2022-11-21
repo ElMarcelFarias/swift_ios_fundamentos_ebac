@@ -46,3 +46,5 @@ print("Meu nome é: \(person.nome) e minha idade é: \(person.idade)")
 
 var imc = person.peso / (person.altura * person.altura)
 print(imc)
+
+// teste de commit! 
