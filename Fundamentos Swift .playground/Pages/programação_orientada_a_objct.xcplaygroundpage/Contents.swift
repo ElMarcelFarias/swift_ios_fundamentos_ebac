@@ -41,8 +41,24 @@ class Student: Person {
         self.course = course
         super.init(nome: nome, sobrenome: sobrenome, idade: idade, altura: altura)
     }
+    
+    convenience init(grade: Double, course: String) {
+        self.init(grade: grade, course: course, nome: "Marcel", sobrenome: "Leite de Farias", idade: 18, altura: 1.72)
+    }
+    
+    func getGrade() -> Double{
+        return grade
+    }
 }
 
+var student01 = Student(grade: 10.0, course: "Análise e desenvolvimento de sistemas", nome: "Marcel", sobrenome: "Leite de Farias",                     idade: 19, altura: 1.72)
+var student02 = Student.init(grade: 8.9, course: "Engenharia de Software")
+
+student01.fullName
+student02.fullName
+
+student01.getGrade()
+student02.getGrade()
 
 
     
