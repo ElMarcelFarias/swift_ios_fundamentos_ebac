@@ -12,6 +12,7 @@
         <page name='exercicios_array_dictionary'/>
         <page name='Struct Enums e Closures'/>
         <page name='exercicio_struct_enum_closures'/>
-        <page name='programação_orientada_a_objct'/>
+        <page name='programação_orientada_a_objct'/>
+        <page name='exercicio_programação_orientada_a_objct_01'/>
     </pages>
 </playground>
