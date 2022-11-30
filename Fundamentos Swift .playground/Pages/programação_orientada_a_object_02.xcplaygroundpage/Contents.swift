@@ -1,4 +1,7 @@
 import Foundation
+/// DESCOMENTAR OS PRINTS PARA OS TESTES DOS EXERCICIOS
+
+
 
 //  Encapsulamento Aula 1)
 /// esconder dentro da classe utilizamos private, com o private só conseguimos utilizar no mesmo contexto da classe, não podendo ser utilizado fora da classe.
@@ -59,7 +62,7 @@ var NubankAccount = MyAccount(nome: "Mayra", sobrenome: "Luiza de Sant'Anna", id
 
 NubankAccount.setBalance(value: 12.00)
 var myValue = NubankAccount.Getdeposito(value: 2000.00)
-print(myValue)
+//print(myValue)
 
 
 
@@ -79,35 +82,35 @@ func addNums(a: Int, b: Int, c: Int) -> Int {
     return a + b + c
 }
 
-print(addNums(a: 2, b: 2))
-print(addNums(a: 2, b: 2, c: 10))
+//print(addNums(a: 2, b: 2))
+//print(addNums(a: 2, b: 2, c: 10))
 
 class Animal {
     func makeNoise() {
-        print("durrrr")
+        //print("durrrr")
     }
 }
 
 class Cat: Animal {
     override func makeNoise() {
-        print("miauu")
+        //print("miauu")
     }
 }
 
 class Dog: Animal {
     override func makeNoise() {
-        print("Au au au")
+        //print("Au au au")
     }
 }
 
 var animal: Animal = Cat()
-animal.makeNoise()
+//animal.makeNoise()
 
 animal = Dog()
-animal.makeNoise()
+//animal.makeNoise()
 
 animal = Animal()
-animal.makeNoise()
+//animal.makeNoise()
 
 
 //  Type Casting Aula 3)
@@ -115,19 +118,19 @@ animal.makeNoise()
 
 class Animal2 {
     func makeNoise() {
-        print("durrrr")
+        //print("durrrr")
     }
 }
 
 class Cat2: Animal2 {
     override func makeNoise() {
-        print("miauu")
+        //print("miauu")
     }
 }
 
 class Dog2: Animal2 {
     override func makeNoise() {
-        print("Au au au")
+        //print("Au au au")
     }
 }
 
@@ -154,3 +157,56 @@ for pet in pets {
     
 }
             
+
+//  Extension Aula 04)
+/// Organizar melhor o código,  caso não tenha acesso ao código original da classe
+/// caso a classe não tenha um nivel private
+
+
+class Person2 {
+    fileprivate var nome: String
+    var sobrenome: String
+    var idade: Int
+    private var altura: Double
+    var fullName: String {
+        "\(nome) \(sobrenome)"
+    }
+    
+    func printarNome(_ nome: String, _ sobrenome: String){
+        print("\(nome) \(sobrenome)")
+    }
+    
+    
+    init(nome: String, sobrenome: String, idade: Int, altura: Double) {
+        self.nome = nome
+        self.sobrenome = sobrenome
+        self.idade = idade
+        self.altura = altura
+    }
+}
+
+extension Person2 {
+    func getIdade() -> Int {
+        return idade
+    }
+}
+
+var person02_1 = Person2(nome: "Marcel", sobrenome: "Leite de Farias", idade: 19, altura: 1.72)
+print(person02_1.getIdade())
+
+extension String {
+    func replace(target: String, withString: String) -> String {
+        return self.replacingOccurrences(of: target, with: withString)
+    }
+    
+    var lenght: Int {
+        get {
+            self.count
+        }
+    }
+    
+}
+
+var email = "marcel.leitefarias@gmail.com"
+print(email.lenght)
+
