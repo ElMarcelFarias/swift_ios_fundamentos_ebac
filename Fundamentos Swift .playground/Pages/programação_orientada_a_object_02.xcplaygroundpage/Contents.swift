@@ -1,6 +1,6 @@
 import Foundation
 
-//  Encapsulamento
+//  Encapsulamento Aula 1)
 /// esconder dentro da classe utilizamos private, com o private só conseguimos utilizar no mesmo contexto da classe, não podendo ser utilizado fora da classe.
 /// fileprivate é utilizavel apenas no mesmo arquivo, se tentarmos utilizar a variavel com o fileprivate em outro arquivo não iriamos conseguir.
 /// internal é o nivel de acesso padrão, é um default.
@@ -60,4 +60,52 @@ var NubankAccount = MyAccount(nome: "Mayra", sobrenome: "Luiza de Sant'Anna", id
 NubankAccount.setBalance(value: 12.00)
 var myValue = NubankAccount.Getdeposito(value: 2000.00)
 print(myValue)
+
+
+
+
+
+//  Polimorfismo Aula 2)
+/// poder alterar o funcionamento de um método de outra classe
+/// 1-Polimorfismo em tempo de compilação e polimorfismo em tempo de execução
+/// Bem relacionado a herança
+
+// -> 1)
+func addNums(a: Int, b: Int) -> Int {
+    return a + b
+}
+
+func addNums(a: Int, b: Int, c: Int) -> Int {
+    return a + b + c
+}
+
+print(addNums(a: 2, b: 2))
+print(addNums(a: 2, b: 2, c: 10))
+
+class Animal {
+    func makeNoise() {
+        print("durrrr")
+    }
+}
+
+class Cat: Animal {
+    override func makeNoise() {
+        print("miauu")
+    }
+}
+
+class Dog: Animal {
+    override func makeNoise() {
+        print("Au au au")
+    }
+}
+
+var animal: Animal = Cat()
+animal.makeNoise()
+
+animal = Dog()
+animal.makeNoise()
+
+animal = Animal()
+animal.makeNoise()
 
