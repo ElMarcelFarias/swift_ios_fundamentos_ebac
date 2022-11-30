@@ -109,3 +109,48 @@ animal.makeNoise()
 animal = Animal()
 animal.makeNoise()
 
+
+//  Type Casting Aula 3)
+/// Fortemente tipado
+
+class Animal2 {
+    func makeNoise() {
+        print("durrrr")
+    }
+}
+
+class Cat2: Animal2 {
+    override func makeNoise() {
+        print("miauu")
+    }
+}
+
+class Dog2: Animal2 {
+    override func makeNoise() {
+        print("Au au au")
+    }
+}
+
+let pets = [Dog2(), Cat2(), Cat2(), Dog2()]
+
+// pode retornar um optional, isso é type casting, forcar o tipo dela
+// forma mais segura
+
+
+for pet in pets {
+    /*if let dog = pet as? Dog2 {
+        dog.makeNoise()
+    }(*/
+     
+    switch pet {
+        case let dog as Dog2:
+            dog.makeNoise()
+        case let cat as Cat2:
+            cat.makeNoise()
+        default:
+             break
+    }
+    
+    
+}
+            
