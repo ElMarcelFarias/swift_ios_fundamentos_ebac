@@ -208,5 +208,24 @@ extension String {
 }
 
 var email = "marcel.leitefarias@gmail.com"
+let newString = "the old string".replace(target: "old", withString: "new")
+print(newString)
 print(email.lenght)
+
+func contactMe() -> [String: String] {
+    
+    return  [
+        "email": "marcel.leitefarias@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/marcel-leite-de-farias-38b62b220/",
+        "whatssap": "+55 47 99928-0278"
+    ]
+}
+
+var contact = contactMe()
+
+for (key,value) in contact {
+    print("\(key) => \(value)")
+}
+
+
 
