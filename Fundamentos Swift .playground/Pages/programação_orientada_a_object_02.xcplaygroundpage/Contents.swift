@@ -183,6 +183,10 @@ class Person2 {
         self.idade = idade
         self.altura = altura
     }
+    
+    deinit{
+        print("\(nome) is removed")
+    }
 }
 
 extension Person2 {
@@ -227,5 +231,5 @@ for (key,value) in contact {
     print("\(key) => \(value)")
 }
 
-
+// Deinit linha 166
 
