@@ -14,6 +14,7 @@
         <page name='exercicio_struct_enum_closures'/>
         <page name='programação_orientada_a_objct'/>
         <page name='exercicio_programação_orientada_a_objct_01'/>
-        <page name='programação_orientada_a_object_02'/>
+        <page name='programação_orientada_a_object_02'/>
+        <page name='exercicio_programação_orientada_a_objeto_2'/>
     </pages>
 </playground>
