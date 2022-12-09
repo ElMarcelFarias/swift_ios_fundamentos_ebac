@@ -15,6 +15,7 @@
         <page name='programação_orientada_a_objct'/>
         <page name='exercicio_programação_orientada_a_objct_01'/>
         <page name='programação_orientada_a_object_02'/>
-        <page name='exercicio_programação_orientada_a_objeto_2'/>
+        <page name='exercicio_programação_orientada_a_objeto_2'/>
+        <page name='protocols_delegates'/>
     </pages>
 </playground>
