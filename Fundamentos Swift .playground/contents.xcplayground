@@ -17,5 +17,7 @@
         <page name='programação_orientada_a_object_02'/>
         <page name='exercicio_programação_orientada_a_objeto_2'/>
         <page name='delegates'/>
+        <page name='protocols'/>
+        <page name='tableView_Arc'/>
     </pages>
 </playground>
