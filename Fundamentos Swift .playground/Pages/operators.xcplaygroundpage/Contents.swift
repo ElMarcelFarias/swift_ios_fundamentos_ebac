@@ -40,7 +40,11 @@ fullName("Marcel", "Leite de Farias")
 
 
 
-func calcIMC (_ altura: Double, _ peso: Double) -> Double {
+/*func calcIMC (_ altura: Double, _ peso: Double) -> Double {
+    return peso / (altura * altura)
+}*/
+
+func calcIMC(_ altura: Double, _ peso:Double) -> Double{
     return peso / (altura * altura)
 }
 
@@ -49,15 +53,19 @@ print(imc)
 
 
 var greeting = "hello "
+var i = 0
 
 for char in greeting {
+    i = i + 1;
     print(char)
 }
+print("Quantidades de vezes que entrou dentro do for -> \(i)")
 
 print(greeting.count)
 
 let index = greeting.startIndex // função que pega a primeira letra da palavra
 var char = greeting[index]
+
 
 var lastIndex = greeting.index(greeting.startIndex, offsetBy: 4) //função que pega a última letra da palavra
 var lastChar = greeting[lastIndex]
