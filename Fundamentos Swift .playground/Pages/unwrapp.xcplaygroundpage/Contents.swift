@@ -45,7 +45,7 @@ func getPerson(person: String?) {
     print("Hello, \(name)")
 }
 
-getPerson(person: nil)
+getPerson(person: "Marcel Leite de Farias")
 
 // Formas seguras e feliz de fazer unwrapp seguro e conciente!
 // Exemplo de unwrapp com imagem
